@@ -9,20 +9,16 @@ function init() {
   document.body.addEventListener('keydown', function(e) {
     
     var check = parseInt(e.detail || e.which)
-    //for (let i=0; i< code.length; i++) {
-      if (check == code[index]){
-        index ++ 
-        if (index == code.length) {
-          alert("Konami Code Master!")
+    if (check == code[index]){
+      index ++ 
+      if (index == code.length) {
+        alert("Konami Code Master!")
           
-          index = 0
-        }
+        index = 0
       }
-      
-      else { index = 0 }
     }
-  //}
+      
+    else { index = 0 }
+    }
   )
-  
-   
 }
